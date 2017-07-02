@@ -1,0 +1,40 @@
+main.mdl-layout__content{
+    width: 100%;
+    min-height: 80vh;
+}
+.page-content{
+    padding: 0 80px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-card-wide.mdl-card{
+    width: 40vw;
+    margin: 20px;
+    flex-grow: 0;
+}
+
+.post-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: #46B6AC;
+}
+.post-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.center-block{
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .page-content {
+        padding: 60px 0;
+        justify-content: space-around;
+    }
+    .post-card-wide.mdl-card {
+        width: 80vw;
+    }
+}
