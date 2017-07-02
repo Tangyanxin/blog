@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+{{ partial "navbar.html" . }}
+  <main class="mdl-layout__content">
+    <div class="page-content">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
+            <div class="post-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">{{ .Title }}-{{ .Date.Format "2006-01-02" }}</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    {{ .Content }}
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">
+                    更多
+                    </a>
+                </div>
+                <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                    </button>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    </main>
+</div>  <!--End of header div-->
+{{ partial "foot.html" . }}

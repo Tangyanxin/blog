@@ -1,0 +1,5 @@
+baseURL = "http://inkbottle.site/"
+languageCode = "en-us"
+title = "inkbottle's site"
+
+theme = "MaterialDesign"

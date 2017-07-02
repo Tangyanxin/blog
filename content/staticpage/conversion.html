@@ -1,0 +1,100 @@
++++
++++
+<div id="conversion" class="center-block">
+    <!-- Simple Textfield -->
+    <div id="inputField" class="mdl-textfield mdl-js-textfield">
+        <!-- Right aligned menu on top of button  -->
+        <input class="mdl-textfield__input" id="inputTag" v-model="inputValue">
+        <label class="mdl-textfield__label" for="inputTag">Input</label>
+    </div>
+    <button id="inputMenu"
+            class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        data-mdl-for="inputMenu">
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="2" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">Bin</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="8" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">oct</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="10" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">dec</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="16" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">hex</span>
+            </label>
+        </label>
+    </ul>
+    <i class="material-icons" style="margin: 20px;">forward</i>
+
+    <div id="outputField" class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" id="outputTag" v-model="outputValue">
+        <label class="mdl-textfield__label" for="outputTag">Output</label>
+    </div>
+    <button id="outputMenu"
+            class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        data-mdl-for="outputMenu">
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="2" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label" style="display:block; height:48px; width:100%;">Bin</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="8" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">oct</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="10" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">dec</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="16" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">hex</span>
+            </label>
+        </label>
+    </ul>
+    <!-- Left aligned menu below button -->
+</div>
+<script>
+    var input = new Vue({
+        el: '#conversion',
+        data: {
+            inputValue: '',
+            inputPicked: 2,
+            outputPicked: 16
+        },
+        computed:{
+            outputValue: function(){
+                return parseInt(this.inputValue, this.inputPicked).toString(this.outputPicked);
+            }
+        },
+        methods:{
+            checkRadio: function(value){
+                
+                return this.outputPicked = value;
+            }
+        }
+    });
+</script>
