@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "inkbottle's site"
 
 theme = "MaterialDesign"
+publishDir = "docs"

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://inkbottle.site/post/%E5%86%99%E5%8D%9A%E5%AE%A2%E4%BB%8E%E4%B8%BB%E9%A2%98%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/post/hello-world---%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2017-07-02T10:24:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/post/hello-world/</loc>
+    <lastmod>2017-07-02T10:24:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/staticpage/conversion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/tags/diy/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/tags/hugo/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/post/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/staticpage/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/tags/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/tags/%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://inkbottle.site/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2017-07-03T21:20:22+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

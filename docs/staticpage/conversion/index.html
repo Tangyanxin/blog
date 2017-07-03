@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
+        <link href="http://inkbottle.site/css/style.css" rel="stylesheet">
+    </head>
+    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-color-blue-grey-50 mdui-theme-primary-red">
+
+<script src="http://inkbottle.site/js/vue.js"></script>
+<header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
+        <span class="mdui-typo-title mdui-typo self-site-title">
+            <a class="mdui-text-color-white-text" href="http://inkbottle.site/">inkbottle&#39;s site</a>
+        </span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8b6;</i></a>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d5;</i></a>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+    </div>
+</header>
+<div id="left-drawer" class="mdui-drawer mdui-drawer-left mdui-color-white">
+    <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Inbox</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Outbox</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Trash</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe872;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Spam</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe000;</i>
+        </li>
+    </ul>
+</div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+            <div id="conversion" class="center-block">
+    <!-- Simple Textfield -->
+    <div id="inputField" class="mdl-textfield mdl-js-textfield">
+        <!-- Right aligned menu on top of button  -->
+        <input class="mdl-textfield__input" id="inputTag" v-model="inputValue">
+        <label class="mdl-textfield__label" for="inputTag">Input</label>
+    </div>
+    <button id="inputMenu"
+            class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        data-mdl-for="inputMenu">
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="2" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">Bin</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="8" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">oct</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="10" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">dec</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="inputOption" value="16" class="mdl-radio__button" v-model="inputPicked">
+                <span class="mdl-radio__label">hex</span>
+            </label>
+        </label>
+    </ul>
+    <i class="material-icons" style="margin: 20px;">forward</i>
+
+    <div id="outputField" class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" id="outputTag" v-model="outputValue">
+        <label class="mdl-textfield__label" for="outputTag">Output</label>
+    </div>
+    <button id="outputMenu"
+            class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        data-mdl-for="outputMenu">
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="2" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label" style="display:block; height:48px; width:100%;">Bin</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="8" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">oct</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="10" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">dec</span>
+            </label>
+        </label>
+        <label class="mdl-menu__item">
+            <label class="mdl-radio mdl-js-radio">
+                <input type="radio" name="outputOption" value="16" class="mdl-radio__button" v-model="outputPicked">
+                <span class="mdl-radio__label">hex</span>
+            </label>
+        </label>
+    </ul>
+    <!-- Left aligned menu below button -->
+</div>
+<script>
+    var input = new Vue({
+        el: '#conversion',
+        data: {
+            inputValue: '',
+            inputPicked: 2,
+            outputPicked: 16
+        },
+        computed:{
+            outputValue: function(){
+                return parseInt(this.inputValue, this.inputPicked).toString(this.outputPicked);
+            }
+        },
+        methods:{
+            checkRadio: function(value){
+                
+                return this.outputPicked = value;
+            }
+        }
+    });
+</script>
+
+    </div>
+    </main>
+</div>  
+
+
+    <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script> 
+    </body>
+</html>

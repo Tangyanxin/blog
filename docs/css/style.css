@@ -1,0 +1,12 @@
+@media (min-width: 1024px){
+    .mdui-appbar-with-toolbar .mdui-drawer {
+        top: 64px;
+    }
+}
+.self-site-title a::before{
+    background-color: #FFF;
+}
+.self-post-entry-media{
+    max-height: 200px;
+    overflow: hidden;
+}
