@@ -1,30 +1,62 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-<div class="mdui-container">
+<div class="mdui-container mdui-typo">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ range $paginator.Pages }}
         <div class="mdui-card mdui-m-t-4">
             <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-            <div class="mdui-card-media self-post-entry-media">
-                {{ if .Params.image }}<img src="{{ .Params.image }}"/>{{ end }}
-                <!-- 卡片中可以包含一个或多个菜单按钮 -->
-                <div class="mdui-card-menu">
-                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+            {{ if .Params.Image }}
+                <div class="mdui-card-media self-post-entry-media">
+                    <img src="{{ .Params.Image }}"/>
+                    <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                    <div class="mdui-card-menu">
+                    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+                    </div>
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">{{ .Title }}</div>
+                            <div class="mdui-card-primary-subtitle">Subtitle</div>
+                            <div class="mdui-chip mdui-float">
+                                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+                                {{ range  .Params.Categories }}
+                                    <span class="mdui-chip-title mdui-text-color-black-text"><a href="#">{{ . }}</a></span>
+                                {{ end }}
+                            </div>
+                            <div class="mdui-chip mdui-float-right">
+                                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+                                {{ range  .Params.Tags }}
+                                    <span class="mdui-chip-title mdui-text-color-black-text"><a href="#">{{ . }}</a></span>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- 卡片的标题和副标题 -->
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">{{ .Title }}</div>
-                <div class="mdui-card-primary-subtitle">Subtitle</div>
-            </div>
+            {{ else }}
+                <!-- 卡片的标题和副标题 -->
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">{{ .Title }}</div>
+                    <div class="mdui-card-primary-subtitle">Subtitle</div>
+                    <div class="mdui-chip mdui-float">
+                        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+                        {{ range  .Params.Categories }}
+                            <span class="mdui-chip-title">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    <div class="mdui-chip mdui-float-right">
+                        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+                        {{ range  .Params.Tags }}
+                            <span class="mdui-chip-title">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            {{ end }}
             
             <!-- 卡片的内容 -->
             <div class="mdui-card-content">{{ .Content }}</div>
             
             <!-- 卡片的按钮 -->
             <div class="mdui-card-actions">
-                <button class="mdui-btn mdui-ripple mdui-float-right mdui-typo">
+                <button class="mdui-btn mdui-ripple mdui-float-right">
                     <i class="mdui-icon material-icons">&#xe89e;</i><a href="{{ .Permalink }}">进去看看</a>
                 </button>
             </div>

@@ -1,5 +1,5 @@
 +++
-imageUrl = ""
+image = ""
 tags = [
   "", "", ""
 ]
