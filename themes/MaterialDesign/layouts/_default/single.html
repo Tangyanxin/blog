@@ -1,8 +1,9 @@
 {{ partial "head.html" . }}
-{{ partial "navbar.html" . }}
+{{ partial "header.html" . }}
 
 <div class="container">
     {{ .Content }}
+    {{ .Description  }}
 </div>
 
 {{ partial "foot.html" . }}

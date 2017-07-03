@@ -1,0 +1,32 @@
+<header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
+        <span class="mdui-typo-title mdui-typo self-site-title">
+            <a class="mdui-text-color-white-text" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8b6;</i></a>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d5;</i></a>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+    </div>
+</header>
+<div id="left-drawer" class="mdui-drawer mdui-drawer-left mdui-color-white">
+    <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Inbox</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Outbox</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Trash</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe872;</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-content">Spam</div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe000;</i>
+        </li>
+    </ul>
+</div>

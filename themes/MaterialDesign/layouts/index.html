@@ -1,29 +1,35 @@
 {{ partial "head.html" . }}
-{{ partial "navbar.html" . }}
-  <main class="mdl-layout__content">
-    <div class="page-content">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-        {{ range $paginator.Pages }}
-            <div class="post-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">{{ .Title }}-{{ .Date.Format "2006-01-02" }}</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    {{ .Content }}
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ .Permalink }}">
-                    更多
-                    </a>
-                </div>
-                <div class="mdl-card__menu">
-                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                    <i class="material-icons">share</i>
-                    </button>
+{{ partial "header.html" . }}
+<div class="mdui-container">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ range $paginator.Pages }}
+        <div class="mdui-card mdui-m-t-4">
+            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+            <div class="mdui-card-media self-post-entry-media">
+                {{ if .Params.image }}<img src="{{ .Params.image }}"/>{{ end }}
+                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                <div class="mdui-card-menu">
+                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
                 </div>
             </div>
-        {{ end }}
-    </div>
-    </main>
-</div>  <!--End of header div-->
+            
+            <!-- 卡片的标题和副标题 -->
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">{{ .Title }}</div>
+                <div class="mdui-card-primary-subtitle">Subtitle</div>
+            </div>
+            
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content">{{ .Content }}</div>
+            
+            <!-- 卡片的按钮 -->
+            <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-ripple mdui-float-right mdui-typo">
+                    <i class="mdui-icon material-icons">&#xe89e;</i><a href="{{ .Permalink }}">进去看看</a>
+                </button>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
 {{ partial "foot.html" . }}

@@ -1,9 +1,10 @@
 {{ partial "head.html" . }}
 <script src="{{ .Site.BaseURL }}js/vue.js"></script>
-{{ partial "navbar.html" . }}
+{{ partial "header.html" . }}
   <main class="mdl-layout__content">
     <div class="page-content">
             {{ .Content }}
+            {{ .Image }}
     </div>
     </main>
 </div>  <!--End of header div-->
