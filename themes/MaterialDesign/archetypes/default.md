@@ -3,8 +3,6 @@ image = ""
 tags = [
   "", "", ""
 ]
-categories = [
-  ""
-]
+categories = ""
 draft = true
 +++

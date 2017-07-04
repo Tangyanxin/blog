@@ -8,3 +8,10 @@
         <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-color-blue-grey-50 mdui-theme-primary-red">
+    {{ partial "header.html" . }}
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script> 
+    </body>
+</html>

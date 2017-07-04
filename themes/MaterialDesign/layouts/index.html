@@ -1,5 +1,4 @@
-{{ partial "head.html" . }}
-{{ partial "header.html" . }}
+{{ define "main" }}
 <div class="mdui-container mdui-typo">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ range $paginator.Pages }}
@@ -16,18 +15,20 @@
                         <div class="mdui-card-primary">
                             <div class="mdui-card-primary-title">{{ .Title }}</div>
                             <div class="mdui-card-primary-subtitle">Subtitle</div>
+                            {{ with .Params.Categories }}
                             <div class="mdui-chip mdui-float">
                                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                                {{ range  .Params.Categories }}
-                                    <span class="mdui-chip-title mdui-text-color-black-text"><a href="#">{{ . }}</a></span>
-                                {{ end }}
+                                    <span class="mdui-chip-title"><a href="#">{{ . }}</a></span>
                             </div>
+                            {{ end }}
+                            {{ if .Params.Tags }}
                             <div class="mdui-chip mdui-float-right">
                                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
                                 {{ range $tag := .Params.Tags }}
                                     {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                                 {{ end }}
                             </div>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
@@ -36,18 +37,20 @@
                 <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title">{{ .Title }}</div>
                     <div class="mdui-card-primary-subtitle">Subtitle</div>
+                    {{ with .Params.Categories }}
                     <div class="mdui-chip mdui-float">
                         <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                        {{ range .Params.Categories }}
-                            <span class="mdui-chip-title">{{ . }}</span>
-                        {{ end }}
+                            <span class="mdui-chip-title"><a href="#">{{ . }}</a></span>
                     </div>
+                    {{ end }}
+                    {{ if .Params.Tags }}
                     <div class="mdui-chip mdui-float-right">
                         <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
                         {{ range $tag := .Params.Tags }}
                             {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                         {{ end }}
                     </div>
+                    {{ end }}
                 </div>
             {{ end }}
             
@@ -65,5 +68,4 @@
         </div>
     {{ end }}
 </div>
-
-{{ partial "foot.html" . }}
+{{ end }}
