@@ -4,3 +4,7 @@ title = "inkbottle's site"
 
 theme = "MaterialDesign"
 publishDir = "docs"
+
+[params]
+  description = ""
+  author = "inkbottle"

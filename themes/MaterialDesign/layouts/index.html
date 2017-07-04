@@ -24,8 +24,8 @@
                             </div>
                             <div class="mdui-chip mdui-float-right">
                                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                                {{ range  .Params.Tags }}
-                                    <span class="mdui-chip-title mdui-text-color-black-text"><a href="#">{{ . }}</a></span>
+                                {{ range $tag := .Params.Tags }}
+                                    {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                                 {{ end }}
                             </div>
                         </div>
@@ -38,21 +38,23 @@
                     <div class="mdui-card-primary-subtitle">Subtitle</div>
                     <div class="mdui-chip mdui-float">
                         <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                        {{ range  .Params.Categories }}
+                        {{ range .Params.Categories }}
                             <span class="mdui-chip-title">{{ . }}</span>
                         {{ end }}
                     </div>
                     <div class="mdui-chip mdui-float-right">
                         <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                        {{ range  .Params.Tags }}
-                            <span class="mdui-chip-title">{{ . }}</span>
+                        {{ range $tag := .Params.Tags }}
+                            {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                         {{ end }}
                     </div>
                 </div>
             {{ end }}
             
             <!-- 卡片的内容 -->
-            <div class="mdui-card-content">{{ .Content }}</div>
+            <div class="mdui-card-content">
+                {{ substr .Content 0 100  | plainify }}
+            </div>
             
             <!-- 卡片的按钮 -->
             <div class="mdui-card-actions">

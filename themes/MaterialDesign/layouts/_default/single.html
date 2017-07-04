@@ -23,8 +23,8 @@
                         </div>
                         <div class="mdui-chip mdui-float-right">
                             <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                            {{ range  .Params.Tags }}
-                                <span class="mdui-chip-title"><a href="#">{{ . }}</a></span>
+                            {{ range $tag := .Params.Tags }}
+                                {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                             {{ end }}
                         </div>
                     </div>
@@ -43,25 +43,17 @@
                 </div>
                 <div class="mdui-chip mdui-float-right">
                     <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                    {{ range  .Params.Tags }}
-                        <span class="mdui-chip-title">{{ . }}</span>
+                    {{ range $tag := .Params.Tags }}
+                        {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
                     {{ end }}
                 </div>
             </div>
         {{ end }}
-        
-        <!-- 卡片的标题和副标题 -->
-        <div class="mdui-card-primary">            
-            
-        </div>
-        
         <!-- 卡片的内容 -->
         <div class="mdui-card-content">
             {{ .Content }}
-            
         </div>
     </div>
-    
 </div>
 
 {{ partial "foot.html" . }}

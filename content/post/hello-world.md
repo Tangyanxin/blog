@@ -4,5 +4,5 @@ title = "hello word"
 
 +++
 
-又是元气满满的一天！
+Hello blog.
 
