@@ -8,8 +8,7 @@
         <link href="http://inkbottle.site/css/style.css" rel="stylesheet">
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-color-blue-grey-50 mdui-theme-primary-red">
-
-<header class="mdui-appbar mdui-appbar-fixed">
+    <header class="mdui-appbar mdui-appbar-fixed">
     <div class="mdui-toolbar mdui-color-theme">
         <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
         <span class="mdui-typo-title mdui-typo self-site-title">
@@ -22,61 +21,73 @@
     </div>
 </header>
 <div id="left-drawer" class="mdui-drawer mdui-drawer-left mdui-color-white">
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="/image/avatar_bg.jpg"/>
+            <div class="mdui-card-media-covered">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title mdui-clearfix">
+                    <img class="mdui-img-circle mdui-float-left" style="width:64px" src="/image/avatar.jpg"/>
+                    <span class="mdui-float-right" style="line-height:64px;">inkbottle</span>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
     <ul class="mdui-list">
         <li class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-content">Inbox</div>
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-content">Outbox</div>
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
+            <div class="mdui-list-item-content">分类</div>
         </li>
         <li class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-content">Trash</div>
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe872;</i>
+            <div class="mdui-list-item-content">标签</div>
         </li>
         <li class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-content">Spam</div>
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe000;</i>
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
+            <div class="mdui-list-item-content">关于我</div>
         </li>
     </ul>
 </div>
 
-
+    
 <div class="mdui-container mdui-typo">
     <div class="mdui-card mdui-m-t-4">
         
+
+
+    
+    <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">Hello world!</div>
+        <div class="mdui-card-primary-subtitle">Subtitle</div>
         
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">hello word</div>
-                <div class="mdui-card-primary-subtitle">Subtitle</div>
                 <div class="mdui-chip mdui-float">
                     <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                    
+                    <span class="mdui-chip-title"><a href="#">[随笔]</a></span>
                 </div>
-                <div class="mdui-chip mdui-float-right">
-                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                    
-                </div>
-            </div>
+                
         
-        
-        
-        <div class="mdui-card-primary">            
+        <div class="mdui-chip mdui-float-right">
+            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+            
+                <span class="mdui-chip-title"><a href="#">test</a></span>
+            
+                <span class="mdui-chip-title"><a href="#">test2</a></span>
+            
+                <span class="mdui-chip-title"><a href="#">test3</a></span>
             
         </div>
         
+    </div>
+
         
         <div class="mdui-card-content">
-            <p>又是元气满满的一天！</p>
+            <p>Hello blog.</p>
 
-            
         </div>
     </div>
-    
 </div>
-
 
     <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script> 
     </body>

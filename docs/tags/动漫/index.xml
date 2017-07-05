@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>随笔 on inkbottle&#39;s site</title>
-    <link>http://inkbottle.site/categories/%E9%9A%8F%E7%AC%94/</link>
-    <description>Recent content in 随笔 on inkbottle&#39;s site</description>
+    <title>动漫 on inkbottle&#39;s site</title>
+    <link>http://inkbottle.site/tags/%E5%8A%A8%E6%BC%AB/</link>
+    <description>Recent content in 动漫 on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Jul 2017 18:08:06 +0800</lastBuildDate>
     
-	<atom:link href="http://inkbottle.site/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://inkbottle.site/tags/%E5%8A%A8%E6%BC%AB/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello world!</title>
-      <link>http://inkbottle.site/post/hello-world/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
-      
-      <guid>http://inkbottle.site/post/hello-world/</guid>
-      <description>Hello blog.</description>
-    </item>
     
     <item>
       <title>写在月色真美之后</title>

@@ -4,7 +4,12 @@ title = "inkbottle's site"
 
 theme = "MaterialDesign"
 publishDir = "docs"
+paginate = 1
 
 [params]
   description = ""
   author = "inkbottle"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

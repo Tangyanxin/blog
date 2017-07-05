@@ -1,11 +1,11 @@
-{{ partial "head.html" . }}
-<script src="{{ .Site.BaseURL }}js/vue.js"></script>
-{{ partial "header.html" . }}
-  <main class="mdl-layout__content">
-    <div class="page-content">
+{{ define "main" }}
+<div class="mdui-container mdui-typo">
+    <div class="mdui-card mdui-m-t-4">
+        {{ partial "post-entry-header.html" . }}
+        <!-- 卡片的内容 -->
+        <div class="mdui-card-content">
             {{ .Content }}
+        </div>
     </div>
-    </main>
-</div>  <!--End of header div-->
-
-{{ partial "foot.html" . }}
+</div>
+{{ end }}

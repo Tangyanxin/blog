@@ -1,59 +1,25 @@
 {{ define "main" }}
 <div class="mdui-container mdui-typo">
     <div class="mdui-card mdui-m-t-4">
-        <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-        {{ if .Params.Image }}
-            <div class="mdui-card-media">
-                <img src="{{ .Params.Image }}"/>
-                <!-- 卡片中可以包含一个或多个菜单按钮 -->
-                <div class="mdui-card-menu">
-                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
-                </div>
-                <div class="mdui-card-media-covered">
-                    <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">{{ .Title }}</div>
-                        <div class="mdui-card-primary-subtitle">Subtitle</div>
-                        {{ with .Params.Categories }}
-                        <div class="mdui-chip mdui-float">
-                            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                                <span class="mdui-chip-title"><a href="#">{{ . }}</a></span>
-                        </div>
-                        {{ end }}
-                        {{ if .Params.Tags }}
-                        <div class="mdui-chip mdui-float-right">
-                            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                            {{ range $tag := .Params.Tags }}
-                                {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-        {{ else }}
-            <!-- 卡片的标题和副标题 -->
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">{{ .Title }}</div>
-                <div class="mdui-card-primary-subtitle">Subtitle</div>
-                {{ with .Params.Categories }}
-                <div class="mdui-chip mdui-float">
-                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                        <span class="mdui-chip-title"><a href="#">{{ . }}</a></span>
-                </div>
-                {{ end }}
-                {{ if .Params.Tags }}
-                <div class="mdui-chip mdui-float-right">
-                    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-                    {{ range $tag := .Params.Tags }}
-                        {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
-                    {{ end }}
-                </div>
-                {{ end }}
-            </div>
-        {{ end }}
+        {{ partial "post-entry-header.html" . }}
         <!-- 卡片的内容 -->
         <div class="mdui-card-content">
-            {{ .Content }}
+            {{ if .Params.Categories }}
+            <div class="mdui-chip mdui-float">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+                {{ with .Params.Categories }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
+            </div>
+            {{ end }}
+            {{ if .Params.Tags }}
+            <div class="mdui-chip mdui-float-right">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+                {{ range $tag := .Params.Tags }}
+                    {{ with $tag }}<span class="mdui-chip-title"><a href="#">{{ . }}</a></span>{{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+            <hr>
+            {{ .Content }}            
         </div>
     </div>
 </div>
