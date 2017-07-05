@@ -1,5 +1,5 @@
 +++
-categories = ["随笔"]
+categories = "随笔"
 date = "2017-07-04T18:08:06+08:00"
 draft = true
 image = ""

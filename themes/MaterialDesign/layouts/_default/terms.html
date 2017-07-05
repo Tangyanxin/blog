@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="mdui-container mdui-typo">
+    <div class="mdui-typo-display-3-opacity">{{ .Title }}</div>
+    {{ $data := .Data }}
+    <ul>
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+        <!--排除某些空标签-->
+        {{ if $value.Name }}
+        <li>
+            <div class="mdui-chip">
+                <span class="mdui-chip-icon">{{ $value.Count }}</span>
+                <a href="{{ $value.Name | urlize }}">
+                    <span class="mdui-chip-title">{{ $value.Name }}</span>
+                </a>
+            </div>
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+</div>
+{{ end }}
