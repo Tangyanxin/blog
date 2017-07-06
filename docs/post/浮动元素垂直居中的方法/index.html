@@ -7,7 +7,7 @@
         <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         <link href="http://inkbottle.site/css/style.css" rel="stylesheet">
         
-<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/rainbow.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/prism/9000.0.1/themes/prism-okaidia.min.css" rel="stylesheet">
 
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red">
@@ -55,7 +55,7 @@
 </div>
 
     
-<div class="mdui-container mdui-typo mdui-p-b-5">
+<div class="mdui-container mdui-p-b-5">
     <div class="mdui-card mdui-m-t-4">
         
 
@@ -67,7 +67,7 @@
     </div>
 
         
-        <div class="mdui-card-content">
+        <div class="mdui-card-content mdui-typo">
             
             <div class="mdui-chip mdui-float">
                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
@@ -92,6 +92,7 @@
 <p>原始代码：</p>
 
 <pre><code class="language-css">*{
+    /**/
     margin: 0;
     padding: 0;
     border: 0;
@@ -130,8 +131,7 @@
 
 <p>解决办法是 ** 在需要浮动的元素外面套一个元素并设置行高设为wrapper的高度，同时将浮动元素的浮动属性转移到新添加的元素之上，并设置浮动元素display属性为inline-block ** 下面是示例代码</p>
 
-<pre><code>&lt;style&gt;
-*{
+<pre><code class="language-css">*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -158,9 +158,9 @@
     background: #0F0;
     line-height: 50px;
 }
-&lt;/style&gt;
+</code></pre>
 
-&lt;div class=&quot;container&quot;&gt;
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;wrapper&quot;&gt;
         &lt;div class=&quot;float-wrapper&quot;&gt;
             &lt;div class=&quot;float&quot;&gt;text&lt;/div&gt;
@@ -200,8 +200,7 @@
 </footer>
     <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
     
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script >hljs.initHighlightingOnLoad();</script>
+<script src="http://inkbottle.site/js/prism.js"></script>
 
     </body>
 </html>

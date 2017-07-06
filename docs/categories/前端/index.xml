@@ -19,9 +19,9 @@
       <guid>http://inkbottle.site/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
       <description>之前在写&amp;rdquo;bilibili+&amp;ldquo;的时候，遇到了一个问题：让浮动的标签垂直居中。下面是解决的具体代码。
 原始代码：
-*{ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .wrapper{ width: 500px; height: 200px; margin: 0 auto; background: #F00; } .float{ width: 50px; height: 50px; float: right; background: #0F0; line-height: 50px; }  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;float&amp;quot;&amp;gt;text&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  效果图：
+*{ /**/ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .wrapper{ width: 500px; height: 200px; margin: 0 auto; background: #F00; } .float{ width: 50px; height: 50px; float: right; background: #0F0; line-height: 50px; }  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;float&amp;quot;&amp;gt;text&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  效果图：
 解决办法是 ** 在需要浮动的元素外面套一个元素并设置行高设为wrapper的高度，同时将浮动元素的浮动属性转移到新添加的元素之上，并设置浮动元素display属性为inline-block ** 下面是示例代码
-&amp;lt;style&amp;gt; *{ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .</description>
+*{ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .</description>
     </item>
     
   </channel>
