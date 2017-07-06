@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+        {{ block "style" . }}
+        {{ end }}
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red">
     {{ partial "header.html" . }}
@@ -13,6 +15,8 @@
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
     {{ partial "footer.html" . }}
-    <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script> 
+    <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
+    {{ block "script" . }}
+    {{ end }}
     </body>
 </html>

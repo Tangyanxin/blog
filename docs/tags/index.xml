@@ -6,7 +6,7 @@
     <description>Recent content in Tags on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Jul 2017 18:08:06 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Jul 2017 18:48:12 +0800</lastBuildDate>
     
 	<atom:link href="http://inkbottle.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,45 +14,27 @@
     <item>
       <title></title>
       <link>http://inkbottle.site/tags/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
+      <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
       
       <guid>http://inkbottle.site/tags/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test</title>
-      <link>http://inkbottle.site/tags/test/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
+      <title>Css</title>
+      <link>http://inkbottle.site/tags/css/</link>
+      <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
       
-      <guid>http://inkbottle.site/tags/test/</guid>
+      <guid>http://inkbottle.site/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test2</title>
-      <link>http://inkbottle.site/tags/test2/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
+      <title>教程</title>
+      <link>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
       
-      <guid>http://inkbottle.site/tags/test2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test3</title>
-      <link>http://inkbottle.site/tags/test3/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
-      
-      <guid>http://inkbottle.site/tags/test3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>动漫</title>
-      <link>http://inkbottle.site/tags/%E5%8A%A8%E6%BC%AB/</link>
-      <pubDate>Tue, 04 Jul 2017 18:08:06 +0800</pubDate>
-      
-      <guid>http://inkbottle.site/tags/%E5%8A%A8%E6%BC%AB/</guid>
+      <guid>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     

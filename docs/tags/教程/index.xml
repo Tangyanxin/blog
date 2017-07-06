@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>inkbottle&#39;s site</title>
-    <link>http://inkbottle.site/</link>
-    <description>Recent content on inkbottle&#39;s site</description>
+    <title>教程 on inkbottle&#39;s site</title>
+    <link>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Jul 2017 18:48:12 +0800</lastBuildDate>
     
-	<atom:link href="http://inkbottle.site/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,15 +22,6 @@
 *{ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .wrapper{ width: 500px; height: 200px; margin: 0 auto; background: #F00; } .float{ width: 50px; height: 50px; float: right; background: #0F0; line-height: 50px; }  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;float&amp;quot;&amp;gt;text&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  效果图：
 解决办法是 ** 在需要浮动的元素外面套一个元素并设置行高设为wrapper的高度，同时将浮动元素的浮动属性转移到新添加的元素之上，并设置浮动元素display属性为inline-block ** 下面是示例代码
 &amp;lt;style&amp;gt; *{ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://inkbottle.site/staticpage/conversion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://inkbottle.site/staticpage/conversion/</guid>
-      <description>Inputmore_vertBinoctdechexforwardOutputmore_vertBinoctdechexvar input = new Vue({el: &#39;#conversion&#39;,data: {inputValue: &#39;&#39;,inputPicked: 2,outputPicked: 16},computed:{outputValue: function(){return parseInt(this.inputValue, this.inputPicked).toString(this.outputPicked);}},methods:{checkRadio: function(value){return this.outputPicked = value;}}});</description>
     </item>
     
   </channel>
