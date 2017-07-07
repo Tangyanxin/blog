@@ -9,12 +9,14 @@
 <meta name="keywords" content="乱码 教程 git " />
 
         <link href="//cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
+        
         <link href="http://inkbottle.site/css/style.css" rel="stylesheet">
+        <link href="http://inkbottle.site/css/customize-style.css" rel="stylesheet">
         
 <link href="//cdn.bootcss.com/prism/9000.0.1/themes/prism-okaidia.min.css" rel="stylesheet">
 
     </head>
-    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red">
+    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-200">
     
 <header class="mdui-appbar mdui-appbar-fixed">
     <div class="mdui-toolbar mdui-color-theme">
@@ -29,7 +31,7 @@
 <div id="left-drawer" class="mdui-drawer mdui-drawer-left mdui-color-white">
     <div class="mdui-card">
         <div class="mdui-card-media">
-            <img src="/image/avatar_bg.jpg"/>
+            <img src="http://inkbottle.site/image/avatar_bg.jpg"/>
             <div class="mdui-card-media-covered">
             <div class="mdui-card-primary">
                 <div class="mdui-card-primary-title mdui-clearfix">
@@ -102,15 +104,17 @@
 
 <h1 id="前言">前言</h1>
 
-<p>我的git bash客户端乱码大致有这么几种：
-1. <code>git log</code>命令下的中文以十六进制显示
-2. <code>git subtree</code>的<code>commit</code>信息乱码 <code>push</code>时显示</p>
-
-<pre><code class="language-bash">Warning: commit message did not conform to UTF-8. You may want to amend it after fixing the message, or set the config variable i18n.commitencoding to the encoding your project uses.
-</code></pre>
+<p>我的git bash客户端乱码大致有这么几种：</p>
 
 <ol>
-<li><code>git status</code>命令下中文乱码</li>
+<li><code>git log</code> 命令下的中文以十六进制显示</li>
+
+<li><p><code>git subtree</code>的<code>commit</code>信息乱码 <code>push</code>时显示</p>
+
+<pre><code class="language-bash">Warning: commit message did not conform to UTF-8. You may want to amend it after fixing the message, or set the config variable i18n.commitencoding to the encoding your project uses.
+</code></pre></li>
+
+<li><p><code>git status</code>命令下中文乱码</p></li>
 </ol>
 
 <h1 id="解决">解决</h1>
@@ -122,7 +126,9 @@ $ git config --global i18n.logoutputencoding utf-8  # 输出 log 编码
 $ export LESSCHARSET=utf-8
 </code></pre>
 
-<p>[参考](&lsquo;<a href="http://www.cnblogs.com/youxin/p/3227961.html'">http://www.cnblogs.com/youxin/p/3227961.html'</a>)</p>
+<h1 id="结语">结语</h1>
+
+<p>下面是我解决的<a href="http://www.cnblogs.com/youxin/p/3227961.html">参考来源</a></p>
             
         </div>
     </div>
@@ -132,18 +138,21 @@ $ export LESSCHARSET=utf-8
 <footer class="mdui-color-theme mdui-typo">
     <div class="mdui-container mdui-p-t-4 mdui-p-b-4">
         <div class="mdui-row">
-            <div class="mdui-col-xs-4">
-                <div class="mdui-text-left">
-                    分享
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
+                    <a href="//github.com/Tangyanxin" class="mdui-text-color-white-text">
+                        <img class="self-icon" src="http://inkbottle.site/image/github.svg" alt="">
+                    </a>
+                    <img class="self-icon" src="http://inkbottle.site/image/%E5%BE%AE%E4%BF%A1.svg"  mdui-tooltip="{content: 'fly_0000000000000000', position: 'top'}">
                 </div>
             </div>
-            <div class="mdui-col-xs-4">
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
                 <div class="mdui-text-center">
                     Copyright © 2017 inkbottle&#39;s Blog
                 </div>
             </div>
-            <div class="mdui-col-xs-4">
-                <div class="mdui-text-right self-site-link">
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
                     Theme: <a href="//github.com/Tangyanxin/MD-Theme" class="mdui-text-color-white-text">MD-Theme</a>
                 </div>
             </div>

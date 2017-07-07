@@ -2,20 +2,13 @@
 <div class="mdui-container mdui-typo mdui-p-b-5">
     <div class="mdui-typo-display-3-opacity">{{ .Title }}</div>
     {{ $data := .Data }}
-    <ul>
     {{ range $key, $value := .Data.Terms.Alphabetical }}
-        <!--排除某些空标签-->
         {{ if $value.Name }}
-        <li>
-            <div class="mdui-chip">
-                <span class="mdui-chip-icon">{{ $value.Count }}</span>
-                <a href="{{ $value.Name | urlize }}">
-                    <span class="mdui-chip-title">{{ $value.Name }}</span>
-                </a>
-            </div>
-        </li>
+
+            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
+                <a href="{{ $value.Name | urlize }}" class="mdui-text-color-white-text">{{ $value.Name }}</a>
+            </button>
         {{ end }}
     {{ end }}
-    </ul>
 </div>
 {{ end }}

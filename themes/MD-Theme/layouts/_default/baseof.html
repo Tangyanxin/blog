@@ -8,11 +8,13 @@
         {{ block "meta" . }}
         {{ end }}
         <link href="{{ .Site.Params.Mduistyle | default "css/mdui.min.css" | absURL}}" rel="stylesheet">
+        <!--草莓图标-->
         <link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
+        <link href="{{ "css/customize-style.css" | absURL }}" rel="stylesheet">
         {{ block "style" . }}
         {{ end }}
     </head>
-    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red">
+    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-200">
     {{ partial "header.html" . }}
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->

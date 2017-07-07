@@ -19,4 +19,7 @@ copyright = "Copyright © 2017 inkbottle's Blog"
   #prism is the highlight plugin for the theme
   prismstyle = "//cdn.bootcss.com/prism/9000.0.1/themes/prism-okaidia.min.css"
   prismscript = ""
+
+# Link for Site Footer
+  
   

@@ -2,18 +2,21 @@
 <footer class="mdui-color-theme mdui-typo">
     <div class="mdui-container mdui-p-t-4 mdui-p-b-4">
         <div class="mdui-row">
-            <div class="mdui-col-xs-4">
-                <div class="mdui-text-left">
-                    分享
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
+                    <a href="//github.com/Tangyanxin" class="mdui-text-color-white-text">
+                        <img class="self-icon" src="{{ "image/github.svg" | absURL}}" alt="">
+                    </a>
+                    <img class="self-icon" src="{{ "image/微信.svg" | absURL}}"  mdui-tooltip="{content: 'fly_0000000000000000', position: 'top'}">
                 </div>
             </div>
-            <div class="mdui-col-xs-4">
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
                 <div class="mdui-text-center">
                     {{ with .Site.Copyright }}{{ . }}{{ end }}
                 </div>
             </div>
-            <div class="mdui-col-xs-4">
-                <div class="mdui-text-right self-site-link">
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
                     Theme: <a href="//github.com/Tangyanxin/MD-Theme" class="mdui-text-color-white-text">MD-Theme</a>
                 </div>
             </div>

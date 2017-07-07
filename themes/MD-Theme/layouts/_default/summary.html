@@ -22,7 +22,7 @@
         </div>
     {{ end }}
     <div class="mdui-card-content">
-        {{ htmlUnescape  .Content | plainify | truncate 100 " ..." }}
+        {{ htmlUnescape  .Content | plainify | truncate 200 " ..." }}
         <hr>
         {{ if .Params.Categories }}
         <div class="mdui-chip mdui-float">

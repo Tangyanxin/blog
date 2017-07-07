@@ -25,7 +25,7 @@
             </div>
             {{ end }}
             <hr>
-            {{ .Content }}            
+            {{ .Content | safeHTML}}            
         </div>
     </div>
 </div>

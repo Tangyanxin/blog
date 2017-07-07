@@ -4,9 +4,16 @@
     }
 }
 .self-site-link a::before{
-    background-color: #FFF;
+    background-color: #FFF!important;
 }
 .self-post-entry-media{
     max-height: 200px;
     overflow: hidden;
+}
+.self-icon{
+    width: 32px;
+    height: 32px;
+}
+pre::-webkit-scrollbar-thumb{
+    background:#CFD8DC;
 }
