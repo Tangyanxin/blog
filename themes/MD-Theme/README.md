@@ -13,4 +13,6 @@ cd themes
 
 ```
 
+# Contributing
+
 
