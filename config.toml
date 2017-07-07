@@ -1,3 +1,4 @@
+# Site Basic Config
 baseURL = "http://inkbottle.site/"
 languageCode = "zh-cmn"
 title = "inkbottle's site"

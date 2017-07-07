@@ -13,14 +13,14 @@
             {{ if .Params.Categories }}
             <div class="mdui-chip mdui-float">
                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                <span class="mdui-chip-title"><a href="{{ "categories/" | absURL }}{{ .Params.Categories }}">{{ .Params.Categories }}</a></span>
+                <span class="mdui-chip-title"><a href="{{ "categories/" | absURL }}{{ .Params.Categories | urlize }}">{{ .Params.Categories }}</a></span>
             </div>
             {{ end }}
             {{ if .Params.Tags }}
             <div class="mdui-chip mdui-float-right">
                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
                 {{ range $tag := .Params.Tags }}
-                    {{ with $tag }}<span class="mdui-chip-title"><a href="{{ "tags/" | absURL }}{{ lower . }}">{{ . }}</a></span>{{ end }}
+                    {{ with $tag }}<span class="mdui-chip-title"><a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a></span>{{ end }}
                 {{ end }}
             </div>
             {{ end }}

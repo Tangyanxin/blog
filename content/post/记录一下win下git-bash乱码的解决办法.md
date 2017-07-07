@@ -1,9 +1,9 @@
 +++
-categories = "教程"
+categories = "GIT"
 date = "2017-07-07T14:00:59+08:00"
 draft = true
 image = "https://ws1.sinaimg.cn/large/006B8wjnly1fhbanbxbnmj30pa0akt8l.jpg"
-tags = ["乱码","windows","git"]
+tags = ["乱码","教程","git"]
 title = "记录一下win下git bash乱码的解决办法"
 
 +++

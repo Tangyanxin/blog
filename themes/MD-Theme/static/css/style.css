@@ -3,7 +3,7 @@
         top: 64px;
     }
 }
-.self-site-title a::before{
+.self-site-link a::before{
     background-color: #FFF;
 }
 .self-post-entry-media{

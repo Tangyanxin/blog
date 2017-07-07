@@ -3,11 +3,11 @@
 
 name = "MD-Theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/Tangyanxin/MD-Theme/LICENSE.md"
 description = "A Material Design Theme for Hugo"
 homepage = "inkbottle.site/MD-Theme/"
 tags = ["Blog", "Theme", "Material Design"]
-features = []
+features = ["Responsive"]
 min_version = "0.21"
 
 [author]
