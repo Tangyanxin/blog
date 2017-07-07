@@ -1,3 +1,7 @@
+{{ define "meta"}}
+{{if .Site.Params.Keywords }}<meta name="keywords" content="{{ range $keywords := .Site.Params.Keywords }}{{ $keywords }},{{ end }}" />{{ end }}
+{{with .Site.Params.Description }}<meta name="description" content="{{ . }}" />{{ end }}
+{{ end }}
 {{ define "main" }}
 <div class="mdui-container mdui-typo mdui-p-b-5">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}

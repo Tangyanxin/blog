@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode }}">
     <head>
         <title>{{ .Site.Title }} | {{ .Title }}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{ block "meta" . }}
         {{ end }}
-        <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
-        <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+        <link href="{{ .Site.Params.Mduistyle | default "css/mdui.min.css" | absURL}}" rel="stylesheet">
+        <link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
         {{ block "style" . }}
         {{ end }}
     </head>
@@ -17,7 +17,7 @@
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
     {{ partial "footer.html" . }}
-    <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
+    <script src="{{ .Site.Params.Mduiscript | default "js/mdui.min.js" | absURL}}"></script>
     {{ block "script" . }}
     {{ end }}
     </body>

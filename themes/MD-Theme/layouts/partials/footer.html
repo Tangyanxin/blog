@@ -1,4 +1,4 @@
-<footer class="mdui-color-theme">
+<footer class="mdui-color-theme mdui-typo">
     <div class="mdui-container mdui-p-t-4 mdui-p-b-4">
         <div class="mdui-row">
             <div class="mdui-col-xs-4">
@@ -8,14 +8,12 @@
             </div>
             <div class="mdui-col-xs-4">
                 <div class="mdui-text-center">
-                    Copyright © 2017 {{ .Site.Params.Author}}'s Blog
+                    {{ with .Site.Copyright }}{{ . }}{{ end }}
                 </div>
             </div>
             <div class="mdui-col-xs-4">
                 <div class="mdui-text-right">
-                    Powered by Hexo
-                    <br>
-                    Theme - Material
+                    Theme: <a href="//github.com/Tangyanxin/MD-Theme" class="mdui-text-color-white-text">MD-Theme</a>
                 </div>
             </div>
         </div>
