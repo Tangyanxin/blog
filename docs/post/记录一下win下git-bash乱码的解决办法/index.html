@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.21" />
-        <title>inkbottle&#39;s site | inkbottle&#39;s site</title>
+        <title>inkbottle&#39;s site | 记录一下win下git bash乱码的解决办法</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        
+<meta name="keywords" content="乱码 windows git " />
+
         <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         <link href="http://inkbottle.site/css/style.css" rel="stylesheet">
         
-        
+<link href="//cdn.bootcss.com/prism/9000.0.1/themes/prism-okaidia.min.css" rel="stylesheet">
+
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red">
     <header class="mdui-appbar mdui-appbar-fixed">
@@ -57,106 +58,74 @@
 </div>
 
     
-<div class="mdui-container mdui-typo mdui-p-b-5">
-    
-    
+<div class="mdui-container mdui-p-b-5">
+    <div class="mdui-card mdui-m-t-4">
         
-<div class="mdui-card mdui-m-t-4">
-    
-    
-        <div class="mdui-card-media self-post-entry-media">
-            <img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhbanbxbnmj30pa0akt8l.jpg"/>
-            <div class="mdui-card-menu">
-            <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
-            </div>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">记录一下win下git bash乱码的解决办法</div>
-                    <div class="mdui-card-primary-subtitle">2017-07-07 Fri</div>
-                </div>
+
+
+    <div class="mdui-card-media ">
+        <img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhbanbxbnmj30pa0akt8l.jpg"/>
+        
+        <div class="mdui-card-menu">
+        <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+        </div>
+        <div class="mdui-card-media-covered">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">记录一下win下git bash乱码的解决办法</div>
+                <div class="mdui-card-primary-subtitle">2017-07-07 Fri</div>
             </div>
         </div>
-    
-    <div class="mdui-card-content">
-         前言 我的git bash客户端乱码大致有这么几种： 1. git log命令下的中文以十六进制显示 2. git subtree的commit信息乱码 push时显示
-Warning: ...
-        <hr>
+    </div>
+
         
-        <div class="mdui-chip mdui-float">
-            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-            <span class="mdui-chip-title"><a href="http://inkbottle.site/categories/%e6%95%99%e7%a8%8b">教程</a></span>
-        </div>
-        
-        
-        <div class="mdui-chip mdui-float-right">
-            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+        <div class="mdui-card-content mdui-typo">
             
+            <div class="mdui-chip mdui-float">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+                <span class="mdui-chip-title"><a href="http://inkbottle.site/categories/%e6%95%99%e7%a8%8b">教程</a></span>
+            </div>
+            
+            
+            <div class="mdui-chip mdui-float-right">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
                 
                     <span class="mdui-chip-title"><a href="http://inkbottle.site/tags/%e4%b9%b1%e7%a0%81">乱码</a></span>
                 
-            
-                
                     <span class="mdui-chip-title"><a href="http://inkbottle.site/tags/windows">windows</a></span>
-                
-            
                 
                     <span class="mdui-chip-title"><a href="http://inkbottle.site/tags/git">git</a></span>
                 
+            </div>
+            
+            <hr>
+            
+
+<h1 id="前言">前言</h1>
+
+<p>我的git bash客户端乱码大致有这么几种：
+1. <code>git log</code>命令下的中文以十六进制显示
+2. <code>git subtree</code>的<code>commit</code>信息乱码 <code>push</code>时显示</p>
+
+<pre><code class="language-bash">Warning: commit message did not conform to UTF-8. You may want to amend it after fixing the message, or set the config variable i18n.commitencoding to the encoding your project uses.
+</code></pre>
+
+<ol>
+<li><code>git status</code>命令下中文乱码</li>
+</ol>
+
+<h1 id="解决">解决</h1>
+
+<pre><code class="language-bash">$ git config --global core.quotepath false          # 显示 status 编码
+$ git config --global gui.encoding utf-8            # 图形界面编码
+$ git config --global i18n.commit.encoding utf-8    # 提交信息编码
+$ git config --global i18n.logoutputencoding utf-8  # 输出 log 编码
+$ export LESSCHARSET=utf-8
+</code></pre>
+
+<p>[参考](&lsquo;<a href="http://www.cnblogs.com/youxin/p/3227961.html'">http://www.cnblogs.com/youxin/p/3227961.html'</a>)</p>
             
         </div>
-        
     </div>
-    <div class="mdui-card-actions">
-        <button class="mdui-btn mdui-ripple mdui-float-right">
-            <i class="mdui-icon material-icons">&#xe89e;</i><a href="http://inkbottle.site/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">进去看看</a>
-        </button>
-    </div>
-</div>
-    
-        
-<div class="mdui-card mdui-m-t-4">
-    
-    
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">浮动元素垂直居中的方法</div>
-            <div class="mdui-card-primary-subtitle">2017-07-06 Thu</div>
-        </div>
-    
-    <div class="mdui-card-content">
-        之前在写”bilibili+“的时候，遇到了一个问题：让浮动的标签垂直居中。下面是解决的具体代码。
-原始代码：
-*{ /**/ margin: 0; padding: 0; border: 0; } ...
-        <hr>
-        
-        <div class="mdui-chip mdui-float">
-            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-            <span class="mdui-chip-title"><a href="http://inkbottle.site/categories/%e5%89%8d%e7%ab%af">前端</a></span>
-        </div>
-        
-        
-        <div class="mdui-chip mdui-float-right">
-            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
-            
-                
-                    <span class="mdui-chip-title"><a href="http://inkbottle.site/tags/%e6%95%99%e7%a8%8b">教程</a></span>
-                
-            
-                
-                    <span class="mdui-chip-title"><a href="http://inkbottle.site/tags/css">CSS</a></span>
-                
-            
-                
-            
-        </div>
-        
-    </div>
-    <div class="mdui-card-actions">
-        <button class="mdui-btn mdui-ripple mdui-float-right">
-            <i class="mdui-icon material-icons">&#xe89e;</i><a href="http://inkbottle.site/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/">进去看看</a>
-        </button>
-    </div>
-</div>
-    
 </div>
 
     <footer class="mdui-color-theme">
@@ -184,6 +153,7 @@ Warning: ...
 </footer>
     <script src="https://cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
     
-    
+<script src="http://inkbottle.site/js/prism.js"></script>
+
     </body>
 </html>
