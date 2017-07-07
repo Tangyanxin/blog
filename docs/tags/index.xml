@@ -5,7 +5,8 @@
     <link>http://inkbottle.site/tags/</link>
     <description>Recent content in Tags on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cmn</language>
+    <copyright>Copyright © 2017 inkbottle&#39;s Blog</copyright>
     <lastBuildDate>Thu, 06 Jul 2017 18:48:12 +0800</lastBuildDate>
     
 	<atom:link href="http://inkbottle.site/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -39,15 +40,6 @@
     </item>
     
     <item>
-      <title>Windows</title>
-      <link>http://inkbottle.site/tags/windows/</link>
-      <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
-      
-      <guid>http://inkbottle.site/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>乱码</title>
       <link>http://inkbottle.site/tags/%E4%B9%B1%E7%A0%81/</link>
       <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
@@ -59,7 +51,7 @@
     <item>
       <title>教程</title>
       <link>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
+      <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
       
       <guid>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>

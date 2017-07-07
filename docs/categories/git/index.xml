@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows on inkbottle&#39;s site</title>
-    <link>http://inkbottle.site/tags/windows/</link>
-    <description>Recent content in Windows on inkbottle&#39;s site</description>
+    <title>Git on inkbottle&#39;s site</title>
+    <link>http://inkbottle.site/categories/git/</link>
+    <description>Recent content in Git on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cmn</language>
+    <copyright>Copyright © 2017 inkbottle&#39;s Blog</copyright>
     <lastBuildDate>Fri, 07 Jul 2017 14:00:59 +0800</lastBuildDate>
     
-	<atom:link href="http://inkbottle.site/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://inkbottle.site/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
