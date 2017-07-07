@@ -2,7 +2,7 @@ baseURL = "http://inkbottle.site/"
 languageCode = "en-us"
 title = "inkbottle's site"
 
-theme = "MaterialDesign"
+theme = "MD-Theme"
 publishDir = "docs"
 paginate = 10
 

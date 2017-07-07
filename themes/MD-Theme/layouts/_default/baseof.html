@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>{{ .Site.Title }} | {{ .Title }}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ block "meta" . }}
+        {{ end }}
         <link href="https://cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
         {{ block "style" . }}

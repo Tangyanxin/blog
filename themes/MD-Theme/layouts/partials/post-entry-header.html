@@ -1,6 +1,6 @@
-<!--文章列表头部-->
-<!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+<!--文章卡片头部-->
 {{ if .Params.Image }}
+<!--包含图片-->
     <div class="mdui-card-media ">
         <img src="{{ .Params.Image }}"/>
         <!-- 卡片中可以包含一个或多个菜单按钮 -->
@@ -10,14 +10,14 @@
         <div class="mdui-card-media-covered">
             <div class="mdui-card-primary">
                 <div class="mdui-card-primary-title">{{ .Title }}</div>
-                <div class="mdui-card-primary-subtitle">Subtitle</div>
+                <div class="mdui-card-primary-subtitle">{{ .Date.Format "2006-01-02 Mon" }}</div>
             </div>
         </div>
     </div>
 {{ else }}
-    <!-- 卡片的标题和副标题 -->
+    <!--不包含图片-->
     <div class="mdui-card-primary">
         <div class="mdui-card-primary-title">{{ .Title }}</div>
-        <div class="mdui-card-primary-subtitle">Subtitle</div>
+        <div class="mdui-card-primary-subtitle">{{ .Date.Format "2006-01-02 Mon" }}</div>
     </div>
 {{ end }}

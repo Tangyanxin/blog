@@ -1,8 +1,9 @@
+<!--列表条目-->
 <div class="mdui-card mdui-m-t-4">
     {{ if .Params.Image }}
+    <!--头部包含图片-->
         <div class="mdui-card-media self-post-entry-media">
             <img src="{{ .Params.Image }}"/>
-            <!-- 卡片中可以包含一个或多个菜单按钮 -->
             <div class="mdui-card-menu">
             <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">&#xe80d;</i></button>
             </div>
@@ -14,20 +15,19 @@
             </div>
         </div>
     {{ else }}
-        <!-- 卡片的标题和副标题 -->
+    <!--不包含图片-->
         <div class="mdui-card-primary">
             <div class="mdui-card-primary-title">{{ .Title }}</div>
             <div class="mdui-card-primary-subtitle">{{ .Date.Format "2006-01-02 Mon" }}</div>
         </div>
     {{ end }}
-    <!-- 卡片的内容 -->
     <div class="mdui-card-content">
-        {{ substr .Content 0 100  | plainify }}
+        {{ htmlUnescape  .Content | plainify |truncate 100 " ..." }}
         <hr>
         {{ if .Params.Categories }}
         <div class="mdui-chip mdui-float">
             <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-            <span class="mdui-chip-title"><a href="{{ "categories/" | relLangURL }}{{ .Params.Categories }}">{{ .Params.Categories }}</a></span>
+            <span class="mdui-chip-title"><a href="{{ "categories/" | absURL }}{{ .Params.Categories }}">{{ .Params.Categories }}</a></span>
         </div>
         {{ end }}
         {{ if .Params.Tags }}
@@ -35,13 +35,12 @@
             <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
             {{ range $tag := .Params.Tags }}
                 {{ with $tag }}
-                    <span class="mdui-chip-title"><a href="{{ "tags/" | relLangURL }}{{ . }}">{{ . }}</a></span>
+                    <span class="mdui-chip-title"><a href="{{ "tags/" | absURL }}{{ lower . }}">{{ . }}</a></span>
                 {{ end }}
             {{ end }}
         </div>
         {{ end }}
     </div>
-    <!-- 卡片的按钮 -->
     <div class="mdui-card-actions">
         <button class="mdui-btn mdui-ripple mdui-float-right">
             <i class="mdui-icon material-icons">&#xe89e;</i><a href="{{ .Permalink }}">进去看看</a>
