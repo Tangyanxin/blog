@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>博客 on 糖芯</title>
-    <link>https://tangxin.me/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <link>https://www.tangxin.me/categories/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on 糖芯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn</language>
     <copyright>Copyright © 2017 糖芯</copyright>
     <lastBuildDate>Sat, 08 Jul 2017 21:16:39 +0800</lastBuildDate>
     
-	<atom:link href="https://tangxin.me/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.tangxin.me/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</title>
-      <link>https://tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</link>
+      <link>https://www.tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</link>
       <pubDate>Sat, 08 Jul 2017 21:16:39 +0800</pubDate>
       
-      <guid>https://tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</guid>
+      <guid>https://www.tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</guid>
       <description>前言 中午心血来潮突然想给博客改个域名，于是乎就有了现在这个tangxin.me
 然而配置域名之前突然想到，何不直接上https呢？搜了一下资料，有一篇官方的教程, 嗯，开干！
 按照教程配置完成之后，出现问题了：访问首页一直是重定向次数过多。打开F12看了一下，一直是从https://tangxin.me和https:///www.tangxin.me之间跳转

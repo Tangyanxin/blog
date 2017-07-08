@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 糖芯</title>
-    <link>https://tangxin.me/post/</link>
+    <link>https://www.tangxin.me/post/</link>
     <description>Recent content in Posts on 糖芯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn</language>
     <copyright>Copyright © 2017 糖芯</copyright>
     <lastBuildDate>Sat, 08 Jul 2017 21:16:39 +0800</lastBuildDate>
     
-	<atom:link href="https://tangxin.me/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.tangxin.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</title>
-      <link>https://tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</link>
+      <link>https://www.tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</link>
       <pubDate>Sat, 08 Jul 2017 21:16:39 +0800</pubDate>
       
-      <guid>https://tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</guid>
+      <guid>https://www.tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</guid>
       <description>前言 中午心血来潮突然想给博客改个域名，于是乎就有了现在这个tangxin.me
 然而配置域名之前突然想到，何不直接上https呢？搜了一下资料，有一篇官方的教程, 嗯，开干！
 按照教程配置完成之后，出现问题了：访问首页一直是重定向次数过多。打开F12看了一下，一直是从https://tangxin.me和https:///www.tangxin.me之间跳转
@@ -37,10 +37,10 @@
     
     <item>
       <title>记录一下win下git bash乱码的解决办法</title>
-      <link>https://tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <link>https://www.tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
       <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
       
-      <guid>https://tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <guid>https://www.tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
       <description>前言 我的git bash客户端乱码大致有这么几种：
  git log 命令下的中文以十六进制显示 git subtree的commit信息乱码 push时显示
 Warning: commit message did not conform to UTF-8. You may want to amend it after fixing the message, or set the config variable i18n.commitencoding to the encoding your project uses.  git status命令下中文乱码
@@ -49,10 +49,10 @@ Warning: commit message did not conform to UTF-8. You may want to amend it after
     
     <item>
       <title>浮动元素垂直居中的方法</title>
-      <link>https://tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <link>https://www.tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
       
-      <guid>https://tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://www.tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
       <description>之前在写&amp;rdquo;bilibili+&amp;ldquo;的时候，遇到了一个问题：让浮动的标签垂直居中。下面是解决的具体代码。
 原始代码：
 *{ /**/ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; margin: 0 auto; } .wrapper{ width: 500px; height: 200px; margin: 0 auto; background: #F00; } .float{ width: 50px; height: 50px; float: right; background: #0F0; line-height: 50px; }  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;float&amp;quot;&amp;gt;text&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  效果图：
