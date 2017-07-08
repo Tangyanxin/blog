@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html lang="zh-cmn">
     <head>
-        <title>inkbottle&#39;s site | Tags</title>
+        <title>inkbottle&#39;s site | github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        
+<meta name="keywords" content="github https 坑 " />
+
         <link href="//cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         
         <link href="/css/customize-style.css" rel="stylesheet">
         
-        
+<link href="//cdn.bootcss.com/prism/9000.0.1/themes/prism-okaidia.min.css" rel="stylesheet">
+
     </head>
     <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-200">
     
@@ -57,61 +59,83 @@
 </div>
 
     
-<div class="mdui-container mdui-typo mdui-p-b-5">
-    <div class="mdui-typo-display-3-opacity">Tags</div>
-    
-    
-        
-    
+<div class="mdui-container mdui-p-b-5">
+    <div class="mdui-card mdui-m-t-4">
         
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="css" class="mdui-text-color-white-text">css</a>
-            </button>
-        
     
-        
+    <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</div>
+        <div class="mdui-card-primary-subtitle">2017-07-08 Sat</div>
+    </div>
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="git" class="mdui-text-color-white-text">git</a>
-            </button>
         
-    
-        
+        <div class="mdui-card-content mdui-typo">
+            
+            <div class="mdui-chip mdui-float">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+                <span class="mdui-chip-title"><a href="https://tangxin.me/categories/%E6%95%99%E7%A8%8B">教程</a></span>
+            </div>
+            
+            
+            <div class="mdui-chip mdui-float-right">
+                <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+                
+                    <span class="mdui-chip-title"><a href="https://tangxin.me/tags/github">github</a></span>
+                
+                    <span class="mdui-chip-title"><a href="https://tangxin.me/tags/https">https</a></span>
+                
+                    <span class="mdui-chip-title"><a href="https://tangxin.me/tags/%E5%9D%91">坑</a></span>
+                
+            </div>
+            
+            <hr>
+            
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="github" class="mdui-text-color-white-text">github</a>
-            </button>
-        
-    
-        
+<h1 id="前言">前言</h1>
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="https" class="mdui-text-color-white-text">https</a>
-            </button>
-        
-    
-        
+<p>中午心血来潮突然想给博客改个域名，于是乎就有了现在这个<code>tangxin.me</code></p>
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="%E4%B9%B1%E7%A0%81" class="mdui-text-color-white-text">乱码</a>
-            </button>
-        
-    
-        
+<p>然而配置域名之前突然想到，何不直接上https呢？搜了一下资料，有一篇官方的<a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">教程</a>, 嗯，开干！</p>
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="%E5%9D%91" class="mdui-text-color-white-text">坑</a>
-            </button>
-        
-    
-        
+<p>按照教程配置完成之后，出现问题了：访问首页一直是重定向次数过多。打开F12看了一下，一直是从<code>https://tangxin.me</code>和<code>https:///www.tangxin.me</code>之间跳转</p>
 
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="%E6%95%99%E7%A8%8B" class="mdui-text-color-white-text">教程</a>
-            </button>
-        
-    
+<p>再次检查cloudflare的规则之后，没毛病啊？而且我的站点也没有跳转的代码，是咋回事呢？而且最气的是根本搜不到相关的资料-。-</p>
+
+<h1 id="解决">解决</h1>
+
+<p>后来一直改着改那，并没有什么变化！于是乎，我决定：删除之前的所有配置，从头走一遍教程！</p>
+
+<p>结果我读到第二步的时候才注意到：</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhcta5d5rlj30ip043t8j.jpg" alt="" /></p>
+
+<p>教程里的CNAME设置的是<code>www.example.com</code>，而我在配置时用的是<code>example.com</code>，会不会是这里出问题了呢？</p>
+
+<p>于是CNAME改为<code>www.tangxin.me</code>问题成功解决</p>
+
+<p>分析了一下：造成无限重定向的原因应该如下</p>
+
+<blockquote>
+<p><img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhctl48fbrj30r30m841x.jpg" alt="" /></p>
+</blockquote>
+
+<p>这一步，是让没有www前缀的裸域名跳转到带www前缀的域名</p>
+
+<p>然而我们的带www的域名又通过CNAME映射在了裸域名上，所以会一直重定向</p>
+
+<h1 id="后记">后记</h1>
+
+<p>搞定域名之后，又发现从github引用的文件部分无法使用，不是全部，而是部分，非常奇怪</p>
+
+<p>后来改来改去也没有解决</p>
+
+<p>最后死马当活马医，索性将github上的doc文件夹删除后又重新push一遍发现都ok了</p>
+
+<p>人生处处是大坑啊~</p>
+            
+        </div>
+    </div>
 </div>
 
     
@@ -141,6 +165,7 @@
 </footer>
     <script src="//cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
     
-    
+<script src="https://tangxin.me/js/prism.js"></script>
+
     </body>
 </html>
