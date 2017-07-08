@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 糖芯</title>
+    <link>https://tangxin.me/categories/</link>
+    <description>Recent content in Categories on 糖芯</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn</language>
+    <copyright>Copyright © 2017 糖芯</copyright>
+    
+	<atom:link href="https://tangxin.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git</title>
+      <link>https://tangxin.me/categories/git/</link>
+      <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
+      
+      <guid>https://tangxin.me/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>https://tangxin.me/categories/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Thu, 06 Jul 2017 18:48:12 +0800</pubDate>
+      
+      <guid>https://tangxin.me/categories/%E5%89%8D%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>博客</title>
+      <link>https://tangxin.me/categories/%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 08 Jul 2017 21:16:39 +0800</pubDate>
+      
+      <guid>https://tangxin.me/categories/%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

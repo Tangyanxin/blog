@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn">
+    <head>
+        <title>糖芯 | 前端</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link href="//cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
+        
+        <link href="/css/customize-style.css" rel="stylesheet">
+        
+        
+    </head>
+    <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-200">
+    
+<header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
+        <span class="mdui-typo-title mdui-typo self-site-link">
+            <a class="mdui-text-color-white-text" href="https://tangxin.me/">糖芯</a>
+        </span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+    </div>
+</header>
+<div id="left-drawer" class="mdui-drawer mdui-drawer-left mdui-color-white">
+    <div class="mdui-card">
+        <div class="mdui-card-media">
+            <img src="https://tangxin.me/image/avatar_bg.jpg"/>
+            <div class="mdui-card-media-covered">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title mdui-clearfix">
+                    <img class="mdui-img-circle mdui-float-left" style="width:64px" src="https://tangxin.me/image/avatar.jpg"/>
+                    
+                </div>
+                <div class="mdui-card-primary-subtitle">这个人很懒...</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-list">
+        <a class="mdui-list-item" href="/categories/">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
+            <div class="mdui-list-item-content">分类</div>
+        </a>
+        <a class="mdui-list-item" href="/tags/">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe872;</i>
+            <div class="mdui-list-item-content">标签</div>
+        </a>
+        <a class="mdui-list-item" href="#">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
+            <div class="mdui-list-item-content">关于我</div>
+        </a>
+    </div>
+</div>
+
+    
+<div class="mdui-container mdui-typo mdui-p-b-5">
+    
+        
+<div class="mdui-card mdui-m-t-4">
+    
+    
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">浮动元素垂直居中的方法</div>
+            <div class="mdui-card-primary-subtitle">2017-07-06 Thu</div>
+        </div>
+    
+    <div class="mdui-card-content">
+        之前在写”bilibili+“的时候，遇到了一个问题：让浮动的标签垂直居中。下面是解决的具体代码。
+原始代码：
+*{ /**/ margin: 0; padding: 0; border: 0; } .container{ min-width: 1000px; padding-top: 200px; ...
+        <hr>
+        
+        <div class="mdui-chip mdui-float">
+            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
+            <span class="mdui-chip-title"><a href="https://tangxin.me/categories/%E5%89%8D%E7%AB%AF">前端</a></span>
+        </div>
+        
+        
+        <div class="mdui-chip mdui-float-right">
+            <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
+            
+                
+                    <span class="mdui-chip-title"><a href="https://tangxin.me/tags/%E6%95%99%E7%A8%8B">教程</a></span>
+                
+            
+                
+                    <span class="mdui-chip-title"><a href="https://tangxin.me/tags/css">CSS</a></span>
+                
+            
+                
+            
+        </div>
+        
+    </div>
+    <div class="mdui-card-actions">
+        <a href="https://tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/" class="mdui-btn mdui-ripple mdui-float-right mdui-btn mdui-color-theme-accent mdui-hoverable">
+            <i class="mdui-icon material-icons">&#xe89e;</i>进去看看
+        </a>
+    </div>
+</div>
+    
+</div>
+
+    
+<footer class="mdui-color-theme mdui-typo">
+    <div class="mdui-container mdui-p-t-4 mdui-p-b-4">
+        <div class="mdui-row">
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
+                    <a href="//github.com/Tangyanxin" class="mdui-text-color-white-text">
+                        <img class="self-icon" src="https://tangxin.me/image/github.svg">
+                    </a>
+                    <img class="self-icon" src="https://tangxin.me/image/%E5%BE%AE%E4%BF%A1.svg"  mdui-tooltip="{content: 'fly_0000000000000000', position: 'top'}">
+                </div>
+            </div>
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center">
+                    Copyright © 2017 糖芯
+                </div>
+            </div>
+            <div class="mdui-col-xs-12 mdui-col-sm-4">
+                <div class="mdui-text-center self-site-link">
+                    Theme: <a href="//github.com/Tangyanxin/MD-Theme" class="mdui-text-color-white-text">MD-Theme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="//cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
+    
+    
+    </body>
+</html>
