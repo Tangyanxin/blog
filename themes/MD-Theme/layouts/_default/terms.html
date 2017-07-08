@@ -4,10 +4,9 @@
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms.Alphabetical }}
         {{ if $value.Name }}
-
-            <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-hoverable self-site-link ">
-                <a href="{{ $value.Name | urlize }}" class="mdui-text-color-white-text">{{ $value.Name }}</a>
-            </button>
+            <a href="{{ $value.Name | urlize }}" class="mdui-btn mdui-color-theme-accent mdui-hoverable mdui-text-color-white-text">
+                {{ $value.Name }}
+            </a>
         {{ end }}
     {{ end }}
 </div>

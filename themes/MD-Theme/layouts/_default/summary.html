@@ -19,7 +19,7 @@
         </div>
     {{ end }}
     <div class="mdui-card-content">
-        {{ htmlUnescape  .Content | plainify | truncate 200 " ..." }}
+        {{ htmlUnescape  .Content | plainify | truncate 150 " ..." }}
         <hr>
         {{ if .Params.Categories }}
         <div class="mdui-chip mdui-float">
@@ -39,8 +39,8 @@
         {{ end }}
     </div>
     <div class="mdui-card-actions">
-        <button class="mdui-btn mdui-ripple mdui-float-right">
-            <i class="mdui-icon material-icons">&#xe89e;</i><a href="{{ .Permalink }}">进去看看</a>
-        </button>
+        <a href="{{ .Permalink }}" class="mdui-btn mdui-ripple mdui-float-right mdui-btn mdui-color-theme-accent mdui-hoverable">
+            <i class="mdui-icon material-icons">&#xe89e;</i>进去看看
+        </a>
     </div>
 </div>
