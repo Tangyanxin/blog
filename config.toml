@@ -1,12 +1,12 @@
 # Site Basic Config
 baseURL = "https://tangxin.me/"
 languageCode = "zh-cmn"
-title = "inkbottle's site"
-author = "inkbottle"
+title = "糖芯"
+author = "vector"
 theme = "MD-Theme"
 publishDir = "docs"
 paginate = 10
-copyright = "Copyright © 2017 inkbottle's Blog"
+copyright = "Copyright © 2017 糖芯"
 
 [params]
   description = "这个人很懒..."

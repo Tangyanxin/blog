@@ -80,12 +80,6 @@
   </url>
   
   <url>
-    <loc>https://tangxin.me/</loc>
-    <lastmod>2017-07-08T21:16:39+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://tangxin.me/tags/%E4%B9%B1%E7%A0%81/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
     <priority>0</priority>
@@ -111,6 +105,12 @@
   
   <url>
     <loc>https://tangxin.me/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2017-07-08T21:16:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/</loc>
     <lastmod>2017-07-08T21:16:39+08:00</lastmod>
     <priority>0</priority>
   </url>
