@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on inkbottle&#39;s site</title>
-    <link>http://inkbottle.site/tags/git/</link>
+    <link>https://tangxin.me/tags/git/</link>
     <description>Recent content in Git on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn</language>
     <copyright>Copyright © 2017 inkbottle&#39;s Blog</copyright>
     <lastBuildDate>Fri, 07 Jul 2017 14:00:59 +0800</lastBuildDate>
     
-	<atom:link href="http://inkbottle.site/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tangxin.me/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>记录一下win下git bash乱码的解决办法</title>
-      <link>http://inkbottle.site/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <link>https://tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
       <pubDate>Fri, 07 Jul 2017 14:00:59 +0800</pubDate>
       
-      <guid>http://inkbottle.site/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <guid>https://tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
       <description>前言 我的git bash客户端乱码大致有这么几种：
  git log 命令下的中文以十六进制显示 git subtree的commit信息乱码 push时显示
 Warning: commit message did not conform to UTF-8. You may want to amend it after fixing the message, or set the config variable i18n.commitencoding to the encoding your project uses.  git status命令下中文乱码

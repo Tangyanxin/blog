@@ -3,85 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://inkbottle.site/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
+    <loc>https://tangxin.me/post/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8Bwin%E4%B8%8Bgit-bash%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://tangxin.me/post/%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-07-06T18:48:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/tags/</loc>
-    <lastmod>2017-07-06T18:48:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/staticpage/conversion/</loc>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/tags/css/</loc>
+    <loc>https://tangxin.me/tags/</loc>
     <lastmod>2017-07-06T18:48:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/tags/git/</loc>
-    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
+    <loc>https://tangxin.me/staticpage/conversion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/categories/git/</loc>
-    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/post/</loc>
-    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/staticpage/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://inkbottle.site/tags/</loc>
+    <loc>https://tangxin.me/tags/css/</loc>
     <lastmod>2017-07-06T18:48:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/</loc>
+    <loc>https://tangxin.me/tags/git/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/tags/%E4%B9%B1%E7%A0%81/</loc>
+    <loc>https://tangxin.me/categories/git/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://tangxin.me/post/</loc>
+    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/staticpage/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/tags/</loc>
     <lastmod>2017-07-06T18:48:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://inkbottle.site/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://tangxin.me/</loc>
+    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/tags/%E4%B9%B1%E7%A0%81/</loc>
+    <lastmod>2017-07-07T14:00:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2017-07-06T18:48:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tangxin.me/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
     <priority>0</priority>
   </url>

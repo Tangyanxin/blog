@@ -1,5 +1,5 @@
 # Site Basic Config
-baseURL = "http://inkbottle.site/"
+baseURL = "https://tangxin.me/"
 languageCode = "zh-cmn"
 title = "inkbottle's site"
 author = "inkbottle"

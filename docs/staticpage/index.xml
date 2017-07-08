@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Staticpages on inkbottle&#39;s site</title>
-    <link>http://inkbottle.site/staticpage/</link>
+    <link>https://tangxin.me/staticpage/</link>
     <description>Recent content in Staticpages on inkbottle&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn</language>
     <copyright>Copyright © 2017 inkbottle&#39;s Blog</copyright>
     
-	<atom:link href="http://inkbottle.site/staticpage/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tangxin.me/staticpage/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://inkbottle.site/staticpage/conversion/</link>
+      <link>https://tangxin.me/staticpage/conversion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://inkbottle.site/staticpage/conversion/</guid>
+      <guid>https://tangxin.me/staticpage/conversion/</guid>
       <description>Inputmore_vertBinoctdechexforwardOutputmore_vertBinoctdechexvar input = new Vue({el: &#39;#conversion&#39;,data: {inputValue: &#39;&#39;,inputPicked: 2,outputPicked: 16},computed:{outputValue: function(){return parseInt(this.inputValue, this.inputPicked).toString(this.outputPicked);}},methods:{checkRadio: function(value){return this.outputPicked = value;}}});</description>
     </item>
     
