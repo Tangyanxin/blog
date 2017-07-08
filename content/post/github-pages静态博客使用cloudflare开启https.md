@@ -1,5 +1,5 @@
 +++
-categories = "教程"
+categories = "博客"
 date = "2017-07-08T21:16:39+08:00"
 draft = true
 image = ""
