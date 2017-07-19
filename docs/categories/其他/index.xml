@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>其他 on 糖芯</title>
+    <link>https://www.tangxin.me/categories/%E5%85%B6%E4%BB%96/</link>
+    <description>Recent content in 其他 on 糖芯</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn</language>
+    <copyright>Copyright © 2017 糖芯</copyright>
+    <lastBuildDate>Wed, 19 Jul 2017 18:11:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.tangxin.me/categories/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于我</title>
+      <link>https://www.tangxin.me/aboutme/</link>
+      <pubDate>Wed, 19 Jul 2017 18:11:24 +0800</pubDate>
+      
+      <guid>https://www.tangxin.me/aboutme/</guid>
+      <description>唐延鑫  出生年月：1996.11 联系方式：176 1500 3695 电子邮箱：tyx1703@gmail.com 求职意向：通信软件工程师      教育经历   2014.09-至今 大连理工大学 通信工程专业 本科学历  项目经历   2016.03-2017.05 大学生创新项目（国家级）：智能音频门锁 队长 介绍：智能音频门锁是一款旨在运用数字信号处理算法设计的全新门禁验证方式 算法：快速傅里叶算法、数字滤波器 硬件：STM32F407、HC-05蓝牙模块 学习成果：将数字信号处理的知识学以致用，加强了实践动手能力   2016.07-2016.09 大连理工大学信通学院官方网站 项目负责人 介绍：全权负责编写以及部署学院官网的相关工作 技术：HTML、CSS、JS、HUGO 学习成果：充分掌握了以上技术在实践中的运用    获奖情况   2017.06 一个都不能少 第五届全国“TRIZ”杯大学生创新方法大赛创业类国家二等奖 第五届全国“TRIZ”杯大学生创新方法大赛创业类辽宁省一等奖   2017.06 鲨网网络攻击可视化平台及预警系统 第五届全国“TRIZ”杯大学生创新方法大赛创业类国家二等奖 第五届全国“TRIZ”杯大学生创新方法大赛创业类辽宁省一等奖   2016.12 基于Kinect的工业检测装置 第二届下一代互联网技术创新大赛创意类国家三等奖 第二届下一代互联网技术创新大赛创意类辽宁省一等奖    技能特长   专业技能： C语言编程能力与单片机程序设计 硬件电子电路设计 PCB电路板的制作、焊接、调试 熟练使用Altium Designer、Multisim等软件   其他技能 掌握HTML 、CSS、JS、PHP，可独立制作网站 熟练运用OFFICE办公软件 大学英语四级 全国计算机二级（C语言）       </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.tangxin.me/aboutme/</loc>
+    <lastmod>2017-07-19T18:11:24+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.tangxin.me/post/github-pages%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AFhttps/</loc>
     <lastmod>2017-07-08T21:16:39+08:00</lastmod>
   </url>
@@ -19,7 +24,7 @@
   
   <url>
     <loc>https://www.tangxin.me/tags/</loc>
-    <lastmod>2017-07-06T18:48:12+08:00</lastmod>
+    <lastmod>2017-07-19T18:11:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,13 +80,19 @@
   
   <url>
     <loc>https://www.tangxin.me/tags/</loc>
-    <lastmod>2017-07-06T18:48:12+08:00</lastmod>
+    <lastmod>2017-07-19T18:11:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.tangxin.me/tags/%E4%B9%B1%E7%A0%81/</loc>
     <lastmod>2017-07-07T14:00:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.tangxin.me/categories/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2017-07-19T18:11:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,7 +122,7 @@
   
   <url>
     <loc>https://www.tangxin.me/</loc>
-    <lastmod>2017-07-08T21:16:39+08:00</lastmod>
+    <lastmod>2017-07-19T18:11:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
