@@ -44,7 +44,7 @@ title = "github pages静态博客使用cloudflare开启https重定向次数过�
 
 后来改来改去也没有解决
 
-最后死马当活马医，索性将github上的doc文件夹删除后又重新push一遍发现都ok了
+最后发现可以使用的元素都是相对地址，而无法加载的都是绝对地址，于是修改配置文件，baseurl设置为`https://www.tangxin.me`，然后完美搞定！
 
 人生处处是大坑啊~
 

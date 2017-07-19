@@ -17,3 +17,7 @@
 pre::-webkit-scrollbar-thumb{
     background:#CFD8DC;
 }
+
+footer{
+    position: relative;
+}
