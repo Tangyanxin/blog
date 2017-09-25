@@ -6,7 +6,7 @@
 {{ end }}
 {{ define "main" }}
 <div class="mdui-container mdui-p-b-5">
-    <div class="mdui-card mdui-m-t-4">
+    <div class="mdui-card mdui-m-t-4 mdui-p-a-5">
         {{ partial "post-entry-header.html" . }}
         <!-- 卡片的内容 -->
         <div class="mdui-card-content mdui-typo">
@@ -25,7 +25,9 @@
             </div>
             {{ end }}
             <hr>
-            {{ .Content | safeHTML}}            
+            <div class="post mdui-typo-body-2">
+                {{ .Content | safeHTML}}
+            </div>
         </div>
     </div>
 </div>
