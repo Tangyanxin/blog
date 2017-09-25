@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="zh-cmn">
     <head>
-        <title>糖芯 | github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</title>
+        <title>糖芯 | 为什么我喜欢绣春刀？</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-<meta name="keywords" content="github https 坑 " />
+<meta name="keywords" content="电影 剧评 " />
 
         <link href="//cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css" rel="stylesheet">
         <link href="https://www.tangxin.me/css/customize-style.css" rel="stylesheet">
@@ -62,10 +62,16 @@
     <div class="mdui-card mdui-m-t-4">
         
 
-    
-    <div class="mdui-card-primary">
-        <div class="mdui-card-primary-title">github pages静态博客使用cloudflare开启https重定向次数过多的解决办法</div>
-        <div class="mdui-card-primary-subtitle">2017-07-08 Sat</div>
+
+    <div class="mdui-card-media ">
+        <img src="https://ws1.sinaimg.cn/large/006B8wjnly1fj5k5go3dij30ij0rs42o.jpg"/>
+        
+        <div class="mdui-card-media-covered">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">为什么我喜欢绣春刀？</div>
+                <div class="mdui-card-primary-subtitle">2017-09-02 Sat</div>
+            </div>
+        </div>
     </div>
 
         
@@ -73,65 +79,43 @@
             
             <div class="mdui-chip mdui-float">
                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe53b;</i></span>
-                <span class="mdui-chip-title"><a href="https://www.tangxin.me/categories/%E5%8D%9A%E5%AE%A2">博客</a></span>
+                <span class="mdui-chip-title"><a href="https://www.tangxin.me/categories/%E9%9A%8F%E7%AC%94">随笔</a></span>
             </div>
             
             
             <div class="mdui-chip mdui-float-right">
                 <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe54e;</i></span>
                 
-                    <span class="mdui-chip-title"><a href="https://www.tangxin.me/tags/github">github</a></span>
+                    <span class="mdui-chip-title"><a href="https://www.tangxin.me/tags/%E7%94%B5%E5%BD%B1">电影</a></span>
                 
-                    <span class="mdui-chip-title"><a href="https://www.tangxin.me/tags/https">https</a></span>
+                    <span class="mdui-chip-title"><a href="https://www.tangxin.me/tags/%E5%89%A7%E8%AF%84">剧评</a></span>
                 
-                    <span class="mdui-chip-title"><a href="https://www.tangxin.me/tags/%E5%9D%91">坑</a></span>
+                    
                 
             </div>
             
             <hr>
             
 
-<h1 id="前言">前言</h1>
+<h2 id="前言">前言</h2>
 
-<p>中午心血来潮突然想给博客改个域名，于是乎就有了现在这个<code>tangxin.me</code></p>
+<p>假期剧荒，在知乎闲逛，偶然看到电影<a href="https://movie.douban.com/subject/24745500/">绣春刀</a>被推荐，而且评价还不低。一直觉的国产电影近几年比不起色，尤其是符合我的口味的片子更是稀有，还是决定试着看一看。</p>
 
-<p>然而配置域名之前突然想到，何不直接上https呢？搜了一下资料，有一篇官方的<a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">教程</a>, 嗯，开干！</p>
+<p>《绣春刀》主要讲述的是明朝时期，北镇抚司总旗沈炼被授命追杀阉党魏忠贤，而期间却出现种种变故，而不得不一步步地越陷越深的故事。</p>
 
-<p>按照教程配置完成之后，出现问题了：访问首页一直是重定向次数过多。打开F12看了一下，一直是从<code>https://tangxin.me</code>和<code>https:///www.tangxin.me</code>之间跳转</p>
+<p>看完第一部之后，给我的印象确实挺好，无论是特效还是故事性，都对得起豆瓣上的分数。而主角沈炼与俩兄弟之间的交情，也让我想起了自己的高中的好哥们，代入感很强。</p>
 
-<p>再次检查cloudflare的规则之后，没毛病啊？而且我的站点也没有跳转的代码，是咋回事呢？而且最气的是根本搜不到相关的资料-。-</p>
+<h2 id="正文">正文</h2>
 
-<h1 id="解决">解决</h1>
+<p>正好今天又看到了<a href="https://movie.douban.com/subject/26270502/">绣春刀II：修罗战场</a>，迫不及待开始观看。</p>
 
-<p>后来一直改着改那，并没有什么变化！于是乎，我决定：删除之前的所有配置，从头走一遍教程！</p>
+<p>看完第二部给我的第一感觉就是故事性没有第一部的好，有些地方感觉比较的突兀，尤其是后面突然出现的信王，还有就是北斋先生和沈炼之间的情义感觉发展的过于快了。而关于这一点，由于第一部的先入为主，所以对第二部女主的存在略感尴尬（这里多个嘴：要是没拍一部就给沈炼多加一位女朋友，感觉让人很难接受啊-.-）。不过电影整体还是不错的，和第一部相比在其他地方并不差。而且个人认为如果没看过第一部直接看第二部效果感觉更好。</p>
 
-<p>结果我读到第二步的时候才注意到：</p>
+<h2 id="感触">感触</h2>
 
-<p><img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhcta5d5rlj30ip043t8j.jpg" alt="" /></p>
+<p>看完这两部片子，真的让我感触颇深，很有代入感的是沈炼，作为一个普通人（虽然身处官场，但是相对来说一没背景，二没财富，所以普通），两次故事的发生却都非常的被动。而且剧情的推动每次都是被逼无奈或者是由于个人的正义感而作出对自己不利的选择。沈炼的故事，让我想到了我们这些普通人，作为除了穷，其他各方面都和二代沾不上边的普通人来说，有太多的时候也像沈炼一样，需要我们被动的作出选择。之所以很喜欢沈炼这个角色，是因为现实生活中我们往往作出的选择都是对自己有利的，而沈炼，却给我们展示了另一个选择的方向。也许有的时候我们也有过作出另外一种选择的念头，但是想想总是比较浅薄，没有什么深度的认识。沈炼的故事，就像是我们自己做了另一种选择一样，所以非常有代入感，这也是很能打动我们的原因之一。</p>
 
-<p>教程里的CNAME设置的是<code>www.example.com</code>，而我在配置时用的是<code>example.com</code>，会不会是这里出问题了呢？</p>
-
-<p>于是CNAME改为<code>www.tangxin.me</code>问题成功解决</p>
-
-<p>分析了一下：造成无限重定向的原因应该如下</p>
-
-<blockquote>
-<p><img src="https://ws1.sinaimg.cn/large/006B8wjnly1fhctl48fbrj30r30m841x.jpg" alt="" /></p>
-</blockquote>
-
-<p>这一步，是让没有www前缀的裸域名跳转到带www前缀的域名</p>
-
-<p>然而我们的带www的域名又通过CNAME映射在了裸域名上，所以会一直重定向</p>
-
-<h1 id="后记">后记</h1>
-
-<p>搞定域名之后，又发现从github引用的文件部分无法使用，不是全部，而是部分，非常奇怪</p>
-
-<p>后来改来改去也没有解决</p>
-
-<p>最后发现可以使用的元素都是相对地址，而无法加载的都是绝对地址，于是修改配置文件，baseurl设置为<code>https://www.tangxin.me</code>，然后完美搞定！</p>
-
-<p>人生处处是大坑啊~</p>
+<p>实现我们未实现的事情，这难道不是一位英雄吗？</p>
             
         </div>
     </div>

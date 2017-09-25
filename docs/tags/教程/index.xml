@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn</language>
     <copyright>Copyright © 2017 糖芯</copyright>
-    <lastBuildDate>Fri, 07 Jul 2017 14:00:59 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jul 2017 18:27:58 +0800</lastBuildDate>
     
 	<atom:link href="https://www.tangxin.me/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu17.04与windows10时间冲突的解决办法</title>
+      <link>https://www.tangxin.me/post/ubuntu17.04%E4%B8%8Ewindows10%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Sat, 22 Jul 2017 18:27:58 +0800</pubDate>
+      
+      <guid>https://www.tangxin.me/post/ubuntu17.04%E4%B8%8Ewindows10%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description> 前言 下午给电脑装了Ubuntu17.04,出现了老生常谈的问题：Ubuntu与windows时间冲突
+原因 </description>
+    </item>
     
     <item>
       <title>记录一下win下git bash乱码的解决办法</title>
