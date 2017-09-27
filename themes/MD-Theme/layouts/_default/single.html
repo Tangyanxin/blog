@@ -5,6 +5,11 @@
 <link href="{{ .Site.Params.Prismstyle | default "css/prism-okaidia.min.css" | absURL}}" rel="stylesheet">
 {{ end }}
 {{ define "main" }}
+<div id="imageView">
+    <div class="imageView-inner">
+        <img src="" alt="" srcset="">
+    </div>
+</div>
 <div class="mdui-container mdui-p-b-5">
     <div class="mdui-card mdui-m-t-4 mdui-p-a-5">
         {{ partial "post-entry-header.html" . }}
