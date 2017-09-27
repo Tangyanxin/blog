@@ -21,3 +21,34 @@ pre::-webkit-scrollbar-thumb{
 footer{
     position: relative;
 }
+
+.post img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    max-height: 60vh;
+}
+#imageView{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6000;
+    background: #aaa;
+    overflow: auto;
+}
+
+#imageView>.imageView-inner>img{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width:768px) {
+    #imageView>.imageView-inner>img{
+        max-width: 768px;
+        display: block;
+        margin: 0 auto;
+    }
+}
